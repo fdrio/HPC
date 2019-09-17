@@ -1,0 +1,141 @@
+﻿Benchmark Validation File - DO NOT MODIFY! If you do, it will fail validation.
+
+Validation Version:    1.3
+
+Program:               y-cruncher v0.7.7 Build 9501
+Tuning:                13-HSW ~ Airi
+
+User:                  None Specified - You can edit this in "Username.txt".
+
+Operating System:      Linux 3.10.0-514.2.2.el7.x86_64 x86_64
+
+Processor(s):
+    Name:              Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz
+    Logical Cores:     48
+    Physical Cores:    24
+    Sockets:           2
+    NUMA Nodes:        2
+    Base Frequency:    2,299,977,104 Hz
+
+Motherboard:
+    Manufacturer:      Dell Inc.
+    Model:             0CNCJW
+    Version:           A05
+    Serial Number:     Suppressed - Personally identifiable information is opt-in only.
+
+Memory:
+    Usable Memory:     134,949,916,672 ( 126 GiB)
+    Total Memory:      Unable to Detect
+
+Constant:              Pi
+Algorithm:             Chudnovsky (1988)
+Decimal Digits:        10,000,000,000
+Hexadecimal Digits:    Disabled
+Computation Mode:      Ram Only
+Threading Mode:        Push Pool  ->  96 / ?  (randomization on)
+Working Memory:        50,623,877,776 (47.1 GiB)
+Total Memory:          50,744,094,672 (47.3 GiB)
+
+Configuration Dump:
+{
+    Constant : {
+        Constant : "pi"
+        Algorithm : "chudnovsky"
+    }
+    ComputeSize : {
+        DecimalDigits : 10000000000
+        EnableHexDigits : "false"
+    }
+    Output : {
+        Path : ""
+        OutputEnable : "true"
+        DigitsPerFile : 0
+    }
+    OutputVerify : "false"
+    Mode : "ram"
+    Parallelism : {
+        TaskDecomposition : 96
+        Framework : "pushpool"
+        WorkerThreads : 0
+        Randomization : "true"
+    }
+    Allocator : {
+        Allocator : "interleave"
+        Hashed : "true"
+        mbind : "false"
+        LockedPages : "attempt"
+        Nodes : [0 1]
+    }
+}
+
+Start Date:            Mon Sep 16 19:02:39 2019
+End Date:              Mon Sep 16 19:12:09 2019
+
+Total Computation Time:    470.692 seconds
+Start-to-End Wall Time:    569.647 seconds
+
+CPU Utilization:           4644.17 %  +  6.82 % kernel overhead
+Multi-core Efficiency:     96.75 %  +  0.14 % kernel overhead
+
+Last Decimal Digits:
+9763261541 1423749758 2083180752 2573977719 9605119144  :  9,999,999,950
+9403994581 8580686529 2375008092 3106244131 4758821220  :  10,000,000,000
+
+SHA256-dec(10,000,000,001 - 10,000,000,100): ee2365308a33d7631956f9669434ad6fb65ec22d05bb18d75d685b5120abccf7
+
+Dec Counts: {999967995,1000037790,1000017271,999976483,999937688,1000007928,999985731,1000041330,999991772,1000036012}
+
+Dec Hash: Floor(|x| * 10^dec) mod (2^61 - 1) = 1927858052751593728
+
+Spot Check:                 Good through 10,000,000,000
+Timer Sanity Check:         Passed
+Frequency Sanity Check:     Disabled in this version of y-cruncher
+Reference Clock:            TSC
+Reference Clock 0:          0
+Reference Clock 1:          128,010,483
+Reference Clock 2:          14,437,111
+Is Debugger Present:        Unknown
+Is Contiguous:              Yes
+ECC Recovered Errors:       0
+Colors:                     Yes
+
+Event Log:
+Mon Sep 16 19:02:39 2019	0.002	Working Memory
+Mon Sep 16 19:02:50 2019	10.389	Working Memory: 47.1 GiB  (spread: ?)
+Mon Sep 16 19:02:50 2019	10.389	Twiddle Tables
+Mon Sep 16 19:02:50 2019	10.454	Twiddle Tables:  115 MiB  (spread: ?)
+Mon Sep 16 19:02:50 2019	10.454	Begin Computation
+Mon Sep 16 19:02:50 2019	10.455	Series CommonP2B3...  705,136,706 terms  (Expansion Factor = 2.911)
+Mon Sep 16 19:02:50 2019	10.455	Series: A ( 20 ) 0.000%
+Mon Sep 16 19:02:50 2019	10.716	Series: A ( 19 ) 0.116%
+Mon Sep 16 19:02:50 2019	11.262	Series: A ( 18 ) 0.318%
+Mon Sep 16 19:02:51 2019	11.860	Series: E ( 17 ) 0.520%
+Mon Sep 16 19:02:52 2019	12.490	Series: E ( 16 ) 0.722%
+Mon Sep 16 19:02:52 2019	13.220	Series: E ( 15 ) 0.962%
+Mon Sep 16 19:02:53 2019	14.202	Series: E ( 14 ) 1.283%
+Mon Sep 16 19:02:55 2019	15.495	Series: E ( 13 ) 1.710%
+Mon Sep 16 19:02:57 2019	17.311	Series: E ( 12 ) 2.280%
+Mon Sep 16 19:02:59 2019	19.817	Series: E ( 11 ) 3.040%
+Mon Sep 16 19:03:02 2019	23.194	Series: E ( 10 ) 4.054%
+Mon Sep 16 19:03:07 2019	27.627	Series: E ( 9 ) 5.406%
+Mon Sep 16 19:03:13 2019	33.751	Series: E ( 8 ) 7.210%
+Mon Sep 16 19:03:21 2019	42.240	Series: E ( 7 ) 9.617%
+Mon Sep 16 19:03:33 2019	54.212	Series: E ( 6 ) 12.832%
+Mon Sep 16 19:03:49 2019	70.101	Series: E ( 5 ) 17.127%
+Mon Sep 16 19:04:12 2019	92.609	Series: E ( 4 ) 22.870%
+Mon Sep 16 19:04:42 2019	122.485	Series: E ( 3 ) 30.559%
+Mon Sep 16 19:05:22 2019	163.048	Series: E ( 2 ) 40.876%
+Mon Sep 16 19:06:19 2019	219.495	Series: E ( 1 ) 54.767%
+Mon Sep 16 19:07:40 2019	301.291	Series: E ( 0 ) 73.604%
+Mon Sep 16 19:09:36 2019	416.423	Finishing Series
+Mon Sep 16 19:09:36 2019	417.042	Large Division
+Mon Sep 16 19:09:52 2019	433.202	InvSqrt(10005)...
+Mon Sep 16 19:10:03 2019	443.407	Large Multiply
+Mon Sep 16 19:10:10 2019	451.262	Base Converting
+Mon Sep 16 19:10:40 2019	481.147	Writing Decimal Digits
+Mon Sep 16 19:12:09 2019	569.647	End Computation
+
+----
+
+Checksum0: e79b53b8a41e67e1f93463aa5b9071b33b8a6419a93053f0e79bcddfad7b817b2c8c0c07a0301623c8b258ad235a546d7b2398b5faa1ea6a513baa1ec3d07576
+Checksum1: f1cca544852af9fdbeefd019e827cc79ea411d0636df864e01263c682c1f093665c857399acf17e45b604452ee25453b2ef9c2d51981e568d7aa010060144a59
