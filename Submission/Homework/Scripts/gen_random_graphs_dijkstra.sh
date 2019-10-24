@@ -1,4 +1,4 @@
-for ((n=500; n<=100000; n+=500));
+for ((n=500; n<=10000; n+=100));
 do
 	eval python3 gengraph.py $n 
 
