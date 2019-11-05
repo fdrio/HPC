@@ -35,7 +35,7 @@ int main(int argc, char * argv[])
 
 	delta = clock() - start;
 	double time_taken = ((double) delta)/CLOCKS_PER_SEC;
-	printf("Time taken: %lf \n", time_taken);
+	printf("Time taken: %lf \n", time_taken);a
     
 	free(G); 
     return 0;
